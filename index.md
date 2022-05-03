@@ -3,9 +3,12 @@
 <script>
   alert("never gonna give you up");
   document.getElementsByClassName("page-header")[0].remove();
-  document.addEventListener('load', () => {
-    document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
-  });
+  while (document.getElementById("content").getElementsByClassName("site-footer").length==0) {
+    console.log("Waiting..");
+    await new Promise(r => setTimeout(r, 500));
+  }
+  document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
+  
   document.addEventListener('click', () => {
     document.getElementById("content").getElementsByTagName("h1")[0].hidden = true;
     document.getElementById("content").getElementsByTagName("video")[0].hidden = false;

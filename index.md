@@ -1,7 +1,12 @@
-## Never gonna give you up
-<video controls="" autoplay="true" name="media"><source src="https://fwesh.yonle.repl.co/" type="video/mp4"></video>
+<h1>Click to see output</h1>
+<video controls="" autoplay="true" name="media" hidden=true><source src="https://fwesh.yonle.repl.co/" type="video/mp4"></video>
 <script>
   alert("never gonna give you up");
-  document.getElementById("content").click();
-  document.getElementById("content").getElementsByTagName("video")[0].play();
+  document.getElementsByClassName("page-header")[0].remove();
+  document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
+  document.addEventListener('click', () => {
+    document.getElementById("content").getElementsByTagName("h1")[0].hidden = true;
+    document.getElementById("content").getElementsByTagName("video")[0].hidden = false;
+    document.getElementById("content").getElementsByTagName("video")[0].play();
+  });
 </script>  

@@ -5,7 +5,6 @@
   document.getElementsByClassName("page-header")[0].remove();
   while (document.getElementById("content").getElementsByClassName("site-footer").length==0) {
     console.log("Waiting..");
-    await new Promise(r => setTimeout(r, 500));
   }
   document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
   

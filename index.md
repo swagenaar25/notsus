@@ -3,7 +3,10 @@
 <script>
   alert("never gonna give you up");
   document.getElementsByClassName("page-header")[0].remove();
-  setTimeout(function() { document.getElementById("content").getElementsByClassName("site-footer")[0].remove(); }, 2000);
+  setTimeout(function() {
+    alert("deleting...");
+    document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
+  }, 2000);
   
   document.addEventListener('click', () => {
     document.getElementById("content").getElementsByTagName("h1")[0].hidden = true;

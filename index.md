@@ -101,7 +101,7 @@
   218922995834555169026<br>
   354224848179261915075
 </p>
-<video controls="" name="media" hidden=true>
+<video name="media" hidden=true loop=true>
   <source src="nevergonna.ogg" type="video/ogg">
   <source src="nevergonna.mp3" type="video/mp3">
 </video>

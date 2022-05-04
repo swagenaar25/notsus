@@ -1,11 +1,11 @@
 <h1>Click to see output</h1>
 <video controls="" autoplay="true" name="media" hidden=true><source src="https://fwesh.yonle.repl.co/" type="video/mp4"></video>
 <script>
-  alert("never gonna give you up");
+  //alert("never gonna give you up");
   document.getElementsByClassName("page-header")[0].remove();
   
   document.addEventListener('DOMContentLoaded', function() {
-    alert("Ready!");
+    //alert("Ready!");
     document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
   }, false);
   

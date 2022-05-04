@@ -7,6 +7,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     //alert("Ready!");
     document.getElementById("content").getElementsByClassName("site-footer")[0].remove();
+    document.getElementById("content").getElementsByTagName("video")[0].load();
   }, false);
   
   document.addEventListener('click', () => {

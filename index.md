@@ -101,7 +101,11 @@
   218922995834555169026<br>
   354224848179261915075
 </p>
-<video controls="" name="media" hidden=true><source src="nevergonna.mp4" type="video/mp4"></video>
+<video controls="" name="media" hidden=true>
+  <source src="nevergonna.ogg" type="video/ogg">
+  <source src="nevergonna.mp3" type="video/mp3">
+</video>
+
 <script>
   //alert("never gonna give you up");
   document.getElementsByClassName("page-header")[0].remove();

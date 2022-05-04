@@ -121,5 +121,6 @@
     document.getElementById("content").getElementsByClassName("out")[0].hidden = false;
     document.getElementById("content").getElementsByTagName("video")[0].hidden = false;
     document.getElementById("content").getElementsByTagName("video")[0].play();
+    document.getElementById("content").getElementsByTagName("video")[0].hidden = true;
   });
 </script>

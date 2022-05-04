@@ -115,7 +115,7 @@
   document.addEventListener('click', () => {
     document.getElementById("content").getElementsByTagName("h1")[0].hidden = true;
     document.getElementById("content").getElementsByClassName("out")[0].hidden = false;
-    //document.getElementById("content").getElementsByTagName("video")[0].hidden = false;
+    document.getElementById("content").getElementsByTagName("video")[0].hidden = false;
     document.getElementById("content").getElementsByTagName("video")[0].play();
   });
 </script>
